@@ -77,6 +77,10 @@ boby {
     border: none;
 }
 
+.sign::hover {
+    color: cyan;
+}
+
 .banner img {
     margin-bottom: 20px;
     border-radius: 10px;
