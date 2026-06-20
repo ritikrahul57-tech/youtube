@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+boby {
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: black;
+}
+
+.container {
+    overflow: hidden;
+    max-width: 1200px;
+    width: 90%;
+    display: flex;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 5px 20px rgba(0, 0 0, 0.1);
+}
+
+.left-side {
+    width: 220px;
+    padding: 25px;
+    border-right: 1px solid black;
+}
+
+.logo {
+    margin-bottom: 30px;
+    color: gold;
+}
+
+.left-side ul {
+    list-style: none;
+}
+
+.left-side li {
+    padding: 12px 0;
+    cursor: pointer;
+    color: black;
+}
+
+.left-side li::hover {
+    color: gold;
+}
+
+.main {
+    flex: 1;
+    padding: 20px;
+}
+
+.top-one {
+    margin-bottom: 30px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.top-one input {
+    padding: 10px;
+    width: 60%;
+    border-radius: 25px;
+    border: 1px solid gold;
+}
+
+
+.sign {
+    cursor: pointer;
+    border-radius: 25px;
+    background: gold;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+}
+
+.banner img {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.h2 {
+    margin-bottom: 15px;
+    color: black;
+}
+
+.video {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+}
+
+.hero {
+    width: 250px;
+}
+
+.hero img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.hero h4 {
+    margin-top: 10px;
+}
+
+.hero p {
+    font-size: 14px;
+    margin-top: 5px;
+    color: black;
+}
+
+
+@media (max-width:768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .video {
+        justify-content: center;
+    }
+
+    .left-side {
+        border-right: none;
+        width: 100%;
+        border-bottom: 1px solid black;
+    }
+    
+}
